@@ -151,6 +151,14 @@
 
 /* END: Car Details styles */
 
+
+/* START: Clear Filter styles */
+.clear-filter__btn {
+  @apply relative min-w-[60px] flex justify-between items-center cursor-default rounded-lg bg-blue-600 text-white py-2 px-3 text-left shadow-md sm:text-sm border;
+}
+
+/* END: Clear Filter styles */
+
 /* START: Custom Filter styles */
 .custom-filter__btn {
   @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
