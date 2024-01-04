@@ -1,12 +1,13 @@
 import { CarProps, FilterProps } from "@/types";
 
 require("dotenv").config();
-const apiKey = process.env.RAPIDAPI_KEY;
+const carKey = process.env.RAPIDAPI_KEY;
+const carImageKey = process.env.IMAGINSTUDIO_KEY;
 
 export async function fetchCars(filters: FilterProps) {
     const { manufacturer, year, model, limit, fuel } = filters;
     const headers = {
-        "X-RapidAPI-Key": apiKey,
+        "X-RapidAPI-Key": carKey,
         "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
     };
 
@@ -34,13 +35,11 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 };
 
 export const generateCarImageURL = (car: CarProps, angle?: string) => {
-    const key = "hrjavascript-mastery";
-
     const url = new URL("https://cdn.imagin.studio/getimage");
 
     const { make, year, model } = car;
 
-    url.searchParams.append("customer", key);
+    url.searchParams.append("customer", carImageKey);
     url.searchParams.append("make", make);
     url.searchParams.append("modelFamily", model.split(" ")[0]);
     url.searchParams.append("zoomType", "fullscreen");

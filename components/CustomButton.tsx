@@ -2,7 +2,6 @@
 
 import { CustomButtonProps } from "@/types";
 import Image from "next/image";
-import { text } from "stream/consumers";
 
 const CustomButton = ({
     title,
