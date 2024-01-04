@@ -8,3 +8,5 @@ Jomlah is a streamlined car rental platform, known for its sleek design and effi
 # Libraries
 - HeadlessUI: Dialogue, Transition, Listbox, Combobox  
 - Tailwind CSS
+
+# Clear-filter
