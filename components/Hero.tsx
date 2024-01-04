@@ -7,8 +7,8 @@ const Hero = () => {
     const handleScroll = () => {};
 
     return (
-        <div className="hero">
-            <div className="flex-1 pt-36 padding-x">
+        <div className="hero border bg-primary-blue-100 p-4 rounded-xl mt-24">
+            <div className="flex-1 pt-36 padding-x ">
                 <h1 className="hero__title">
                     Lease a vehicle Swiftly & Effortlessly.
                 </h1>
@@ -19,7 +19,7 @@ const Hero = () => {
 
                 <CustomButton
                     title="Explore Cars"
-                    containerStyles="bg-primary-blue text-white rounded-full mt-10"
+                    containerStyles="bg-blue-600 text-white rounded-full mt-10"
                     handleClick={handleScroll}
                 />
             </div>
@@ -33,7 +33,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="hero__image-overlay" />
+                {/* <div className="hero__image-overlay" /> */}
             </div>
         </div>
     );

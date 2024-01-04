@@ -46,7 +46,7 @@ const CarCard = ({ car }: CarCardProps) => {
                 <div className="flex group-hover:invisible w-full justify-between text-gray">
                     <div className="flex flex-col justify-center items-center gap-2">
                         <Image
-                            src="/steering-wheel.svg"
+                            src="/steering.svg"
                             width={30}
                             height={30}
                             alt="steering wheel"
@@ -78,7 +78,7 @@ const CarCard = ({ car }: CarCardProps) => {
                 <div className="car-card__btn-container">
                     <CustomButton
                         title="Details"
-                        containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
+                        containerStyles="w-full py-[16px] rounded-full bg-blue-600"
                         textStyles="text-white text-[14px] leading-[17px] font-bold"
                         rightIcon="/right-arrow.svg"
                         handleClick={() => setIsOpen(true)}
