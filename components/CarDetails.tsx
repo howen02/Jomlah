@@ -7,6 +7,7 @@ import { Dialog, Transition } from "@headlessui/react";
 
 import { CarProps } from "@/types";
 import { generateCarImageURL } from "@/utils";
+import { CustomButton } from ".";
 
 interface CarDetailsProps {
     isOpen: boolean;
@@ -15,6 +16,10 @@ interface CarDetailsProps {
 }
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
+    const rentCar = (car: CarProps) => {
+        console.log(car);
+    };
+
     return (
         <>
             <Transition appear show={isOpen} as={Fragment}>
@@ -135,6 +140,14 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                                                     </div>
                                                 )
                                             )}
+                                        </div>
+                                        <div>
+                                            <CustomButton
+                                                title="Rent"
+                                                containerStyles="w-1/4  mx-auto rounded-full bg-blue-600"
+                                                textStyles="text-lg font-bold text-white"
+                                                handleClick={() => rentCar(car)}
+                                            />
                                         </div>
                                     </div>
                                 </Dialog.Panel>
