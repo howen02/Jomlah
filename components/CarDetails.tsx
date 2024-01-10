@@ -141,14 +141,14 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                                                 )
                                             )}
                                         </div>
-                                        <div>
-                                            <CustomButton
-                                                title="Rent"
-                                                containerStyles="w-1/4  mx-auto rounded-full bg-blue-600"
-                                                textStyles="text-lg font-bold text-white"
-                                                handleClick={() => rentCar(car)}
-                                            />
-                                        </div>
+                                    </div>
+                                    <div>
+                                        <CustomButton
+                                            title="Rent"
+                                            containerStyles="w-1/4 mx-auto rounded-full bg-blue-600"
+                                            textStyles="text-bs font-bold text-white"
+                                            handleClick={() => rentCar(car)}
+                                        />
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
