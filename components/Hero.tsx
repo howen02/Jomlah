@@ -7,8 +7,8 @@ const Hero = () => {
     const handleScroll = () => {};
 
     return (
-        <div className="hero border bg-primary-blue-100 p-4 rounded-xl mt-24">
-            <div className="flex-1 pt-36 padding-x">
+        <div className="hero border bg-primary-blue-100 p-4 rounded-xl mt-24 mb-24">
+            <div className="flex-1 py-5 padding-x">
                 <h1 className="hero__title">
                     Lease a vehicle Swiftly & Effortlessly.
                 </h1>

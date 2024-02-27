@@ -1,8 +1,8 @@
 import { CarProps, FilterProps } from "@/types";
 
 require("dotenv").config();
-const carKey = process.env.RAPIDAPI_KEY;
-const carImageKey = process.env.IMAGINSTUDIO_KEY;
+const carKey = process.env.RAPIDAPI_KEY!;
+const carImageKey = process.env.IMAGINSTUDIO_KEY!;
 
 export async function fetchCars(filters: FilterProps) {
     const { manufacturer, year, model, limit, fuel } = filters;

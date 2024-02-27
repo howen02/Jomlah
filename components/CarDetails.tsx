@@ -7,7 +7,7 @@ import { Dialog, Transition } from "@headlessui/react";
 
 import { CarProps } from "@/types";
 import { generateCarImageURL } from "@/utils";
-import { CustomButton } from ".";
+import { CustomButton, RentTime } from ".";
 
 interface CarDetailsProps {
     isOpen: boolean;
@@ -142,7 +142,8 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                                             )}
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="flex">
+                                        <RentTime />
                                         <CustomButton
                                             title="Rent"
                                             containerStyles="w-1/4 mx-auto rounded-full bg-blue-600"
