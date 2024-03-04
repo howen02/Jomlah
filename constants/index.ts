@@ -90,7 +90,7 @@ export const footerLinks = [
     {
         title: "Connect With Us",
         links: [
-            { title: "Instagram", url: "/" },
+            { title: "Instagram", url: "/_layzyy?igsh=MWxkb216Z3ZkZTNpOA==" },
             { title: "Twitter", url: "/" },
             { title: "LinkedIn", url: "/" },
         ],
