@@ -91,8 +91,8 @@ export const footerLinks = [
         title: "Connect With Us",
         links: [
             { title: "Instagram", url: "https://www.instagram.com/_layzyy?igsh=MWxkb216Z3ZkZTNpOA%3D%3D" },
-            { title: "Twitter", url: "/" },
-            { title: "LinkedIn", url: "/" },
+            { title: "Twitter", url: "https://t.me/Imziyi" },
+            { title: "LinkedIn", url: "https://www.linkedin.com/in/yi-wern-tsui-735372221/" },
         ],
     },
 ];
